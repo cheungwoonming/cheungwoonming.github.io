@@ -100,11 +100,13 @@ System.output.println(c);
 
 {% endhighlight%}
 
+
+
 ​	import python
 
 ​    infg
 
-
+![this is a image](https://www.baidu.com/s?wd=%E9%AB%98%E8%80%83&tn=SE_pshlcjsy_xef5bmh9)
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
