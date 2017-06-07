@@ -108,13 +108,17 @@ System.output.println(c);
 
 ** nvjf
 
-** cndjn **
+**cndjn **
 
 **nfvn**
 
-*njd*
+试试这个[注释]
 
-***njnvfj**
+[注释]:cmdkcndnciidyinn
+
+试试这个[^注释]
+
+[^注释]: cmdkcndnciidyinn
 
 ![this is a image](https://www.baidu.com/s?wd=%E9%AB%98%E8%80%83&tn=SE_pshlcjsy_xef5bmh9)
 
