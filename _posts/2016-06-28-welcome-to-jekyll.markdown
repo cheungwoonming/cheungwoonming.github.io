@@ -128,7 +128,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 [![railroad]({{ site.images }}/rails.jpg)]({{ site.images }}/rails.jpg)
 
-[![railroad]({{site.images}}/owl.jpg)]({{site.images}}/owl.jpg)
+[![railroad]({{site.images}}/owl.jpg)]({{site.images}}/rails.jpg)
 
 ![img]({{site.images}}/rails.jpg)
 
