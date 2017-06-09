@@ -130,5 +130,5 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 ![img]({{site.images}}/rails.jpg)
 
-![img]({{site.images}}../assets/images/rails.jpg)
+![img](/assets/images/rails.jpg)
 
