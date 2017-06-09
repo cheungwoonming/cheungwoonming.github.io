@@ -88,7 +88,7 @@ System.output.println(a);
 
 
 
-{% highlight java linenos %}
+{% highlight java %}
 
 import System;
 
