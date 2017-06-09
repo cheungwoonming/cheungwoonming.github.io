@@ -14,7 +14,7 @@ description:
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "http://cheungwoonming.github.io" # the base hostname & protocol for your site
+url: "http://cheungwoonming.me" # the base hostname & protocol for your site
 twitter_username: LGod
 github_username: CheungWoonMing
 disqus_username:
