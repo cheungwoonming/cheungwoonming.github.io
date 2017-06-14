@@ -1,5 +1,5 @@
 ---
-bg: "myself.jpg"
+bg: "about.jpg"
 layout: page
 title: "About"
 crawlertitle: "About"
