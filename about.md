@@ -1,10 +1,10 @@
 ---
-bg: "owl.jpg"
+bg: "myself.jpg"
 layout: page
 title: "About"
 crawlertitle: "About"
 permalink: /about/
-summary: "About this blog"
+summary: "About myself"
 active: about
 ---
 
