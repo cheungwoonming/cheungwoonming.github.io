@@ -1,5 +1,5 @@
 ---
-bg: "fall.jpg"
+bg: "fall.png"
 layout: post
 title: "秒速五厘米"
 crawlertitle: "Byousoku 5 Centimeter"
