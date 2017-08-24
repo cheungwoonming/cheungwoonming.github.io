@@ -14,30 +14,38 @@ author: CheungWoonMing
 
 资料地址：[deeplearning在线学习网站](http://neuralnetworksanddeeplearning.com)
 
-1. ### Chapter1：
+### Chapter1：
 
-   获取源码：git clone [https://github.com/mnielsen/neural-networks-and-deep-learning.git](https://github.com/mnielsen/neural-networks-and-deep-learning.git)
+获取源码：git clone [https://github.com/mnielsen/neural-networks-and-deep-learning.git](https://github.com/mnielsen/neural-networks-and-deep-learning.git)
 
-   ​
 
-2. ### Chapter2：
 
-   介绍反向传播的原理。
+### Chapter2：
 
-   神经网络的学习过程：
+介绍反向传播的原理。
 
-   [![image]({{site.images}}/2017-08-24/chapter2-1.png)]({{site.images}}/2017-08-24/chapter2-1.png)
+神经网络的学习过程：
 
-3. ### Chapter3：
+[![image]({{site.images}}/2017-08-24/chapter2-1.png)]({{site.images}}/2017-08-24/chapter2-1.png)
 
-   学习缓慢问题。
+### Chapter3：
 
-   输出层使用quadratic cost function时，
+学习缓慢问题。
 
-   [![image]({{site.images}}/2017-08-24/chapter3-1.png)]({{site.images}}/2017-08-24/chapter3-1.png)
+输出层使用quadratic cost function时，
 
-   当输出结果和目标结果相差特别大时，或者说是位于sigmoid函数的两端很平滑的位置时，由于斜率很小，导致误差C对权重w和偏差b的偏导数很小，使得变化很小，学习缓慢。
+[![image]({{site.images}}/2017-08-24/chapter3-1.png)]({{site.images}}/2017-08-24/chapter3-1.png)
 
-   [![image]({site.images}/2017-08-24/chapter3-2.png)]({site.images}/2017-08-24/chapter3-2.png)
+当输出结果和目标结果相差特别大时，或者说是位于sigmoid函数的两端很平滑的位置时，由于斜率很小，导致误差C对权重w和偏差b的偏导数很小，使得变化很小，学习缓慢。
 
-   ​
+[![image]({{site.images}}/2017-08-24/chapter3-2.png)]({{site.images}}/2017-08-24/chapter3-2.png)
+
+使用cross-entropy cost function，解决学习缓慢的问题。
+
+[![image]({{site.images}}/2017-08-24/chapter3-3.png)]({{site.images}}/2017-08-24/chapter3-3.png)
+
+[![image]({{site.images}}/2017-08-24/chapter3-4.png)]({{site.images}}/2017-08-24/chapter3-4.png)
+
+[![image]({{site.images}}/2017-08-24/chapter3-5.png)]({{site.images}}/2017-08-24/chapter3-5.png)
+
+​
