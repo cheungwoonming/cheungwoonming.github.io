@@ -16,6 +16,8 @@ author: CheungWoonMing
 
 [![image]({{site.images}}/2017-06-14-1.png)]({{site.images}}/2017-06-14-1.png)
 
+[![image](./../assets/images/2017-06-14-1.png)](./../assets/images/2017-06-14-1.png)
+
 ## 《无名之约》
 
 因为想要配得上优秀，拥有更强的力量，
@@ -70,7 +72,7 @@ author: CheungWoonMing
 
 灯光照耀下倾斜的雨点，映衬出荧光般的闪烁。
 
-即使有所顾忌，依旧心情愉悦， 
+即使有所顾忌，依旧心情愉悦，
 
 那种痛快淋漓的解放，空灵透彻的心境，已经记不起是何年。
 
