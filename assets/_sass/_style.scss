@@ -5,11 +5,6 @@
   width: 100%;
   display: inline-block;
 
-  @include mobile {
-    font-size: $small-font-size;
-    padding: 24px 0;
-  }
-
   > .prev {
     float: left;
     width: 50%;
