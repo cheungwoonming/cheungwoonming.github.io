@@ -39,12 +39,13 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
   })
 </script>
 
-{% for post in site.posts limit: 5 %}
-  <article class="index-page">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
+<!--旧版文章展示-->
+<!--{% for post in site.posts limit: 5 %}-->
+<!--  <article class="index-page">-->
+<!--    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>-->
+<!--    {{ post.excerpt }}-->
+<!--  </article>-->
+<!--{% endfor %}-->
 
 <div class="posts">
   {% for post in paginator.posts %}
