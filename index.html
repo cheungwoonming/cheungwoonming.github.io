@@ -3,8 +3,29 @@ bg: "accelerator.png"
 layout: default
 crawlertitle: "CheungWoonMing Blog"
 title: "幻圣"
-summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的思绪所缠绕<br/>&nbsp&nbsp&nbsp&nbsp任何人群里都没有一个人，想要探寻你那被埋葬的时间"
+summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的思绪所缠绕<br/>&nbsp&nbsp&nbsp&nbsp任何人群里都没有一个人，想要探寻你那被埋葬的时间<br/>"
 ---
+
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="搜索文章...">
+  <ul id="results-container"></ul>
+</div>
+
+<!--script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script-->
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+
+<script>
+	window.simpleJekyllSearch = new SimpleJekyllSearch({
+	searchInput: document.getElementById('search-input'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '{{ site.baseurl }}/search.json',
+	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+	noResultsText: 'No results found',
+	limit: 10,
+	fuzzy: false,
+	exclude: ['Welcome']
+  })
+</script>
 
 {% for post in site.posts limit: 5 %}
   <article class="index-page">

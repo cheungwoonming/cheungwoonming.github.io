@@ -12,7 +12,7 @@ description: Write an awesome description for your new site here. You can edit t
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "ch"
-url: "http://cheungwoonming.github.io" # the base hostname & protocol for your site
+url: "https://cheungwoonming.github.io"
 twitter_username: 幻圣
 github_username: CheungWoonMing
 disqus_username:
@@ -42,6 +42,10 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
 
 images: '/assets/images'
 
