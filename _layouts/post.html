@@ -18,6 +18,9 @@ layout: default
 
     {{ content }}
 
+    {% include disqus.html %}
+    {% include gitalk.html %}
+
     <div class="post-links">
       {% if page.next.url %}
         <a class="link-to-post" href="{{ page.next.url }}">
