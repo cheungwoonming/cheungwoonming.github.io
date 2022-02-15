@@ -7,7 +7,19 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
 ---
 
 <div class="search-container">
-  <input type="text" id="search-input" placeholder="搜索文章...">
+  <input type="text" id="search-input" placeholder="输入搜索文章关键词..." style="width: 80%;
+    height: 40px;
+    color: #333;
+    background-color: rgba(227,231,236,.2);
+    line-height: 40px;
+    padding:0px 16px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 17px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
   <ul id="results-container"></ul>
 </div>
 
@@ -20,7 +32,7 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
 	resultsContainer: document.getElementById('results-container'),
 	json: '{{ site.baseurl }}/search.json',
 	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
+	noResultsText: '无匹配文章...',
 	limit: 10,
 	fuzzy: false,
 	exclude: ['Welcome']
@@ -33,3 +45,54 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
     {{ post.excerpt }}
   </article>
 {% endfor %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  {% unless post.draft %}
+    <article class="post">
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+
+      <div clsss="meta">
+        <span class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </span>
+
+        <ul class="tag">
+          {% for tag in post.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+              {{ tag }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="entry">
+        {{ post.excerpt | truncate: 200 }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endunless %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        ← 上一页
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        下一页 →
+      </a>
+    </span>
+  {% endif %}
+</div>
