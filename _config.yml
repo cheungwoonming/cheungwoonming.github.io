@@ -7,16 +7,18 @@
 
 # Site settings
 title: 幻圣的空间
-email: huanmingzhang@qq.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-lang: "en"
+lang: "ch"
 url: "http://cheungwoonming.github.io" # the base hostname & protocol for your site
 twitter_username: 幻圣
 github_username: CheungWoonMing
 disqus_username:
+
+# Pagination
+paginate: 2
 
 # Build settings
 markdown: kramdown
@@ -48,3 +50,11 @@ gitalk:
   clientSecret: 1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb
   repo: cheungwoonming.github.io
   owner: cheungwoonming
+
+footer-links:
+  email: huanmingzhang@qq.com
+  github: cheungwoonming
+  zhihu: huan-sheng-19-28
+  bilibili: 85885497
+  # https://space.bilibili.com/85885497
+  #weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
