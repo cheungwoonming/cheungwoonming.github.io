@@ -2,13 +2,13 @@
 /*鼠标样式*/
 body,
 html {
-  cursor: url({{ site.baseurl }}//assets/cur/min1.cur),
+  cursor: url(/assets/cur/min1.cur),
     auto !important;
 }
 
 /* a, */
 img {
-  cursor: url({{ site.baseurl }}/assets/cur/move.cur),
+  cursor: url(/assets/cur/move.cur),
     auto !important;
 }
 
