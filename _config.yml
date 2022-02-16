@@ -40,7 +40,7 @@ compress_html:
 
 sass:
   sass_dir: assets/_sass
-  style: compressed
+#  style: compressed
 
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
