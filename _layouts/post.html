@@ -24,23 +24,7 @@ layout: default
 
     {{ content }}
 
-      <!-- Gitalk 评论 start  -->
-      <div id="gitalk-container"></div>
-          <script type="text/javascript">
-          var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
-          var gitalk = new Gitalk({
 
-          // gitalk的主要参数
-              clientID: '{{ site.gitalk.clientID }}',
-              clientSecret: '{{ site.gitalk.clientSecret }}',
-              repo: '{{ site.gitalk.repo }}',
-              owner: '{{ site.gitalk.owner }}',
-              admin: '{{ site.gitalk.owner }}',
-              id: title,//因为这里不能超过50字符
-          });
-          gitalk.render('gitalk-container');
-          </script>
-      <!-- Gitalk end -->
 
     <div class="post-links">
       {% if page.next.url %}
