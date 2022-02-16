@@ -18,7 +18,7 @@ layout: default
       &nbsp;/&nbsp;
       <span>{{ page.author }}</span>
     {% endif %}
-     / <span>{{ page.content | number_of_words }} words</span>
+     / <span>{{ content | strip_html | strip_newlines | split: "" | size }} 字</span>
   </p>
 
   <div class="post-content">
