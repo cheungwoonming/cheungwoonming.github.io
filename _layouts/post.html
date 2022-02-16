@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 ---
 
 <!-- Link Gitalk 的支持文件 -->
@@ -22,9 +22,11 @@ layout: post
 
   <div class="post-content">
 
-    {{ content }}
+    <article>
+      {{ content }}
+    </article>
 
-
+    <div id="gitalk-container"></div>
 
     <div class="post-links">
       {% if page.next.url %}
@@ -44,7 +46,8 @@ layout: post
 
   </div>
 
-  <div id="gitalk-container"></div>
+  {% if site.comments.gitalk %}
+
   <script type="text/javascript">
       var gitalk = new Gitalk({
           clientID: '{{ site.gitalk.clientID }}',
@@ -57,4 +60,5 @@ layout: post
       });
       gitalk.render('gitalk-container');
   </script>
+  {% endif %}
 </article>
