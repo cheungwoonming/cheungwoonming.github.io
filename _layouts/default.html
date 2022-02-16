@@ -18,7 +18,13 @@ layout: compress
 
     {% include footer.html %}
 
-  <script src="{{ site.baseurl }}/assets/js/click_fireworks.js"></script>
+<!--    爱心特效-->
+<!--    <script src="{{ site.baseurl }}/assets/js/click_fireworks.js"></script>-->
+
+    <!--烟花特效-->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/anime.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/click_fireworks.js"></script>
 
   </body>
 </html>
