@@ -8,14 +8,6 @@ summary: "List of blog"
 active: archive
 ---
 
-<!--<ul class="category-key">-->
-<!--    {% for tag in site.tags %}-->
-<!--    <li>-->
-<!--        <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>-->
-<!--    </li>-->
-<!--    {% endfor %}-->
-<!--</ul>-->
-
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
