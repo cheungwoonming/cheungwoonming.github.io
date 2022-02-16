@@ -49,12 +49,13 @@ plugins:
 
 images: '/assets/images'
 
+
 gitalk:
   enable: true
-  clientID: ac91e3a3714342401e59
-  clientSecret: 1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb
-  repo: cheungwoonming.github.io
-  owner: cheungwoonming
+  clientID: 'ac91e3a3714342401e59'
+  clientSecret: '1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb'
+  repo: 'cheungwoonming.github.io'
+  owner: 'cheungwoonming'
   distractionFreeMode: true
 
 footer-links:
