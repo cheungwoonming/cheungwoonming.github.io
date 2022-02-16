@@ -55,7 +55,6 @@ gitalk:
   clientSecret: 1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb
   repo: cheungwoonming.github.io
   owner: cheungwoonming
-  labels: 'gitalk'
   distractionFreeMode: true
 
 footer-links:

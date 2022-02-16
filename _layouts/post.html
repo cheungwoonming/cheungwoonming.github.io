@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <!-- Link Gitalk 的支持文件 -->
@@ -52,7 +52,8 @@ layout: default
           repo: '{{ site.gitalk.repo }}',
           owner: '{{ site.gitalk.owner }}',
           admin: '{{ site.gitalk.owner }}',
-          id: md5(window.location.pathname)
+          id: md5(window.location.pathname),
+          distractionFreeMode: true
       });
       gitalk.render('gitalk-container');
   </script>
