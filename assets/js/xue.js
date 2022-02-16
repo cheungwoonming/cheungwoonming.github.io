@@ -49,7 +49,7 @@
                 flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
             }
 
-            ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";  //雪花颜色
+            ctx.fillStyle = "rgba(176,226,255," + flake.opacity + ")";  //雪花颜色
             flake.y += flake.velY;
             flake.x += flake.velX;
 
