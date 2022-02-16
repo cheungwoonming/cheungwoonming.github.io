@@ -8,13 +8,13 @@ summary: "List of blog"
 active: archive
 ---
 
-<ul class="category-key">
-    {% for tag in site.tags %}
-    <li>
-        <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>
-    </li>
-    {% endfor %}
-</ul>
+<!--<ul class="category-key">-->
+<!--    {% for tag in site.tags %}-->
+<!--    <li>-->
+<!--        <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>-->
+<!--    </li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -28,10 +28,10 @@ active: archive
         <li>
           {% if post.lastmod %}
             <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="date">{{ post.lastmod | date: "%d-%m-%Y"  }}</span>
+            <span class="date">{{ post.lastmod | date: "%Y-%m-%d"  }}</span>
           {% else %}
             <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="date">{{ post.date | date: "%d-%m-%Y"  }}</span>
+            <span class="date">{{ post.date | date: "%Y-%m-%d"  }}</span>
           {% endif %}
         </li>
       {% endif %}
