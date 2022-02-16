@@ -14,9 +14,13 @@ layout: default
     {% endif %}
   </p>
 
+  {% include tags.html %}
+
   <div class="post-content">
 
     {{ content }}
+
+    {% include tags.html %}
 
     <div class="post-links">
       {% if page.next.url %}

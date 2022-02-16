@@ -9,8 +9,6 @@ categories: posts
 tags: ['winter']
 author: CheungWoonMing
 ---
-* 目录
-{:toc}
 
 听说樱花落下的速度是每秒五厘米，
 
