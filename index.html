@@ -81,19 +81,34 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
   {% endfor %}
 </div>
 
+<!--<div class="pagination">-->
+<!--  {% if paginator.previous_page %}-->
+<!--    <span class="prev">-->
+<!--      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">-->
+<!--        ← 上一页-->
+<!--      </a>-->
+<!--    </span>-->
+<!--  {% endif %}-->
+<!--  {% if paginator.next_page %}-->
+<!--    <span class="next">-->
+<!--      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">-->
+<!--        下一页 →-->
+<!--      </a>-->
+<!--    </span>-->
+<!--  {% endif %}-->
+<!--</div>-->
+
+
 <div class="pagination">
   {% if paginator.previous_page %}
-    <span class="prev">
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        ← 上一页
-      </a>
-    </span>
+    <a class="prev" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+      <span class="prev_pag"> ← 上一页 </span>
+    </a>
   {% endif %}
+
   {% if paginator.next_page %}
-    <span class="next">
-      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        下一页 →
-      </a>
-    </span>
+    <a class="prev" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
+      <span class="prev_pag"> 下一页 → </span>
+    </a>
   {% endif %}
 </div>
