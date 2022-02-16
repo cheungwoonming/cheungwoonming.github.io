@@ -9,7 +9,6 @@ active: timeline
 ---
 
 {% for post in site.posts %}
-  <ul class="year">
     {% unless post.next %}
       <h1 class="category-key">{{ post.date | date: '%Y年' }}</h1>
     {% else %}
@@ -20,6 +19,7 @@ active: timeline
       {% endif %}
     {% endunless %}
 
+  <ul class="year">
     <li>{{ post.date | date:"%Y年%m月%d日：" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
   </ul>
 
