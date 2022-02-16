@@ -11,7 +11,7 @@ description: Write an awesome description for your new site here. You can edit t
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-lang: "ch"
+lang: "zh-CN"
 url: "https://cheungwoonming.github.io"
 twitter_username: 幻圣
 github_username: CheungWoonMing
@@ -50,10 +50,13 @@ plugins:
 images: '/assets/images'
 
 gitalk:
+  enable: true
   clientID: ac91e3a3714342401e59
   clientSecret: 1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb
   repo: cheungwoonming.github.io
   owner: cheungwoonming
+  labels: 'gitalk'
+  distractionFreeMode: true
 
 footer-links:
   email: huanmingzhang@qq.com
