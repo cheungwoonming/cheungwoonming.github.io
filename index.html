@@ -40,12 +40,12 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
 </script>
 
 <!--旧版文章展示-->
-<!--{% for post in site.posts limit: 5 %}-->
-<!--  <article class="index-page">-->
-<!--    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>-->
-<!--    {{ post.excerpt }}-->
-<!--  </article>-->
-<!--{% endfor %}-->
+{% for post in site.posts limit: 5 %}
+  <article class="index-page">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}
 
 <div class="posts">
   {% for post in paginator.posts %}
@@ -75,28 +75,11 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
         {{ post.excerpt | truncate: 200 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+<!--      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
     </article>
   {% endunless %}
   {% endfor %}
 </div>
-
-<!--<div class="pagination">-->
-<!--  {% if paginator.previous_page %}-->
-<!--    <span class="prev">-->
-<!--      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">-->
-<!--        ← 上一页-->
-<!--      </a>-->
-<!--    </span>-->
-<!--  {% endif %}-->
-<!--  {% if paginator.next_page %}-->
-<!--    <span class="next">-->
-<!--      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">-->
-<!--        下一页 →-->
-<!--      </a>-->
-<!--    </span>-->
-<!--  {% endif %}-->
-<!--</div>-->
 
 <!--分页器-->
 <div class="post-links">
