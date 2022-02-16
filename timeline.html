@@ -11,12 +11,12 @@ active: timeline
 {% for post in site.posts %}
   <ul class="year">
     {% unless post.next %}
-      <h2>{{ post.date | date: '%Y年' }}</h2>
+      <h1 class="category-key">{{ post.date | date: '%Y年' }}</h1>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y年' }}</h2>
+        <h1 class="category-key">{{ post.date | date: '%Y年' }}</h1>
       {% endif %}
     {% endunless %}
 
