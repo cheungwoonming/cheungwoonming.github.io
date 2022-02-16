@@ -1,8 +1,8 @@
 ---
 bg: "tag.jpg"
 layout: page
-permalink: /posts/
-title: "归档"
+permalink: /timeline/
+title: "Timeline"
 crawlertitle: "All articles order by time"
 summary: "List of blog"
 active: timeline
