@@ -23,19 +23,20 @@ layout: default
     <div id="gitalk-container"></div>
 
     <div class="post-links">
+      {% if page.previous.url %}
+        <a class="link-to-post" href="{{ page.previous.url }}">
+          <span class="link-to-post__prev">&#9756; &nbsp;上一篇</span>
+          <span class="link-to-post__title">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+
       {% if page.next.url %}
         <a class="link-to-post" href="{{ page.next.url }}">
-          <span class="link-to-post__next">&#9875; &nbsp;下一篇</span>
+          <span class="link-to-post__next">下一篇&nbsp;&#9758;</span>
           <span class="link-to-post__title">{{ page.next.title }}</span>
         </a>
       {% endif %}
 
-      {% if page.previous.url %}
-        <a class="link-to-post" href="{{ page.previous.url }}">
-          <span class="link-to-post__prev">&#10535; &nbsp;上一篇</span>
-          <span class="link-to-post__title">{{ page.previous.title }}</span>
-        </a>
-      {% endif %}
     </div>
 
   </div>

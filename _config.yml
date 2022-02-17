@@ -18,7 +18,7 @@ github_username: CheungWoonMing
 disqus_username:
 
 # Pagination
-paginate: 5
+paginate: 3
 
 # Build settings
 markdown: kramdown
