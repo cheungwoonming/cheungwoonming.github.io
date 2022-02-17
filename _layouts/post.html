@@ -2,11 +2,6 @@
 layout: default
 ---
 
-<!-- Link Gitalk 的支持文件 -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="assets/js/md5.min.js"></script>
-
 <article class="post">
 
   <h1 class="post-title">{{ page.title }}</h1>
@@ -46,6 +41,11 @@ layout: default
   </div>
 
 </article>
+
+<!-- Link Gitalk 的支持文件 -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="assets/js/md5.min.js"></script>
 
 {% if site.gitalk.enable %}
   <script type="text/javascript">
