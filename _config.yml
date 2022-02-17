@@ -50,7 +50,7 @@ plugins:
 images: '/assets/images'
 
 animation:
-  Snowflake: true
+  Snowflake: false
 
 gitalk:
   enable: true
