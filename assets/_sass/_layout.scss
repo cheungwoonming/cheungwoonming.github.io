@@ -103,31 +103,18 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   padding: 0 1rem;
   text-transform: uppercase;
-  //a {
-  //  -webkit-order: 1;
-  //  -ms-flex-order: 1;
-  //  order: 1;
-  //  line-height: 50px;
-  //  margin: auto;
-  //  color: #333;
-  //  text-decoration: none;
-  //  &:hover,
-  //  &:focus,
-  //  &:active {
-  //    color: #766257;
-  //  }
-  //}
   a {
-    width: 100%;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     line-height: 50px;
-    font-size: 15px;
-    text-decoration: none;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    border-bottom: 0;
-    text-align: center;
+    margin: auto;
+    color: #333;
+
     font-weight: bold;
+    font-size: 15px;
+
+    text-decoration: none;
     &:hover,
     &:focus,
     &:active {
