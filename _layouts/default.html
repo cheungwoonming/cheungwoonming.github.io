@@ -18,30 +18,5 @@ layout: compress
 
     {% include footer.html %}
 
-<!--    点击爱心特效-->
-
-    {% if site.animation.Click_love %}
-      <script src="{{ site.baseurl }}/assets/js/click_love.js"></script>
-    {% endif %}
-
-<!--    点击烟花特效-->
-    {% if site.animation.Click_fireworks %}
-      <script src="{{ site.baseurl }}/assets/js/click_fireworks.js"></script>
-    {% endif %}
-
-<!--    看板-->
-    {% if site.animation.Signboard %}
-      <script src="{{ site.baseurl }}/assets/js/L2Dwidget.min.js"></script>
-      <script src="{{ site.baseurl }}/assets/js/L2Dwidget.0.min.js"></script>
-      <script>
-          L2Dwidget.init({
-              "model": { jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json", "scale": 1 },
-              "display": { "position": "right", "width": 100, "height": 200, "hOffset": 0, "vOffset": -20 },
-              "mobile": { "show": true, "scale": 0.5 },
-              "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
-          });
-      </script>
-    {% endif %}
-
   </body>
 </html>
