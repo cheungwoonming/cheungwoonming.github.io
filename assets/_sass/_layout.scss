@@ -109,7 +109,7 @@ a {
     order: 1;
     line-height: 50px;
     margin: auto;
-    color: #333;
+    color: $oc-teal-3;
 
     font-weight: bold;
     font-size: 16px;
@@ -132,7 +132,7 @@ a {
   .blog-logo {
     width: 100%;
     line-height: 50px;
-    font-size: 29px;
+    font-size: 19px;
     text-decoration: none;
     -webkit-order: 0;
     -ms-flex-order: 0;
