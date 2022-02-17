@@ -50,7 +50,10 @@ plugins:
 images: '/assets/images'
 
 animation:
-  Snowflake: false
+  Snowflake: true
+  Click_love: false
+  Click_fireworks: true
+  Signboard: true
 
 gitalk:
   enable: true
