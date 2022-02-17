@@ -1,14 +1,18 @@
 
 /*鼠标样式*/
-body,
+body {
+  cursor: url(/assets/cur/Arrow.cur),
+    auto !important;
+}
+
 html {
-  cursor: url(/assets/cur/min1.cur),
+  cursor: url(/assets/cur/Hand.ani),
     auto !important;
 }
 
 /* a, */
 img {
-  cursor: url(/assets/cur/move.cur),
+  cursor: url(/assets/cur/SizeAll.ani),
     auto !important;
 }
 
