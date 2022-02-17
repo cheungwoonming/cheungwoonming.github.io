@@ -31,8 +31,8 @@ var emj_arr = ["&#129409", "&#8986", "&#8987", "&#9200", "&#9748", "&#9749", "&#
     a.className = "heart",
     d.push({
       el: a,
-      x: e.clientX,
-      y: e.clientY,
+      x: e.clientX + 10,
+      y: e.clientY + 10,
       scale: 1,
       alpha: 1
     }),
