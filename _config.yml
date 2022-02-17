@@ -51,7 +51,7 @@ images: '/assets/images'
 
 animation:
   Snowflake: true
-  Click_love: true
+  Click_love: false
   Click_fireworks: true
   Signboard: true
 
