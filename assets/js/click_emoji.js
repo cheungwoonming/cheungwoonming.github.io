@@ -33,7 +33,7 @@ var emj_arr = ["&#129409", "&#8986", "&#8987", "&#9200", "&#9748", "&#9749", "&#
     d.push({
       el: a,
       x: e.clientX - 15,
-      y: e.clientY - 20,
+      y: e.clientY - 25,
       scale: 1,
       alpha: 1
     }),
