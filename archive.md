@@ -2,8 +2,8 @@
 bg: "tag.jpg"
 layout: page
 permalink: /posts/
-title: "Archive"
-crawlertitle: "All articles"
+title: "归档"
+crawlertitle: "文章归档"
 summary: "List of blog"
 active: archive
 ---
