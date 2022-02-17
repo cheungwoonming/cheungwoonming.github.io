@@ -118,7 +118,7 @@ a {
     &:hover,
     &:focus,
     &:active {
-      color: #766257;
+      color: $oc-blue-4;
     }
   }
 }
@@ -132,7 +132,7 @@ a {
   .blog-logo {
     width: 100%;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 29px;
     text-decoration: none;
     -webkit-order: 0;
     -ms-flex-order: 0;
