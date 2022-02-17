@@ -49,6 +49,8 @@ plugins:
 
 images: '/assets/images'
 
+animation:
+  Snowflake: true
 
 gitalk:
   enable: true

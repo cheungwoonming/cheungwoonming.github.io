@@ -3,6 +3,9 @@
 </footer>
 <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 
-<canvas id="Snow" width="542" height="722"></canvas>
-<script src="{{ site.baseurl }}/assets/js/xue.js"></script>
+{% if site.animation.Snowflake %}
+  <canvas id="Snow" width="542" height="722"></canvas>
+  <script src="{{ site.baseurl }}/assets/js/xue.js"></script>
+{% endif %}
+
 
