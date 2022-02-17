@@ -1,19 +1,13 @@
 ---
 bg: "about.jpg"
 layout: page
-title: "About"
-crawlertitle: "About"
+title: "关于"
+crawlertitle: "关于"
 permalink: /about/
-summary: "About myself"
+summary: "关于我"
 active: about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{{site.twitter_username}} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
+我的Github：
 {{site.github_username}} /
-[jekyll](https://github.com/jekyll/jekyll)
+[Github Addr](https://github.com/cheungwoonming)
