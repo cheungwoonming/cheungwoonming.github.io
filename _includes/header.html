@@ -4,17 +4,17 @@
 
   <nav class="center-wrapper nav-main">
 
-    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="blog-logo" href="{{ site.baseurl }}/"><h4>{{ site.title }}</h4></a>
 
     {% for my_page in site.pages %}
       {% if my_page.active %}
-    <a href="{{ my_page.url | prepend: site.baseurl }}"><h2>{{ my_page.title }}</h2>></a>
+    <a href="{{ my_page.url | prepend: site.baseurl }}"><h4>{{ my_page.title }}</h4></a>
       {% endif %}
     {% endfor %}
 
 <!--    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>-->
 
-    <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
+    <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick> ☰ </label>
   </nav>
 
 </header>
