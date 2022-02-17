@@ -2,7 +2,7 @@ var emj_arr = ["&#129409", "&#8986", "&#8987", "&#9200", "&#9748", "&#9749", "&#
 // emj数值参考：https://www.runoob.com/charsets/ref-emoji.html
 !function(e, t, a) {
   function n() {
-    c(".heart{width:1px;user-select:none;height:1px;position:fixed;cursor:default;font-size:40px;}"),
+    c(".heart{width:1px;user-select:none;height:1px;position:fixed;cursor:default;font-size:20px;}"),
     o(),
     r()
   }
@@ -33,7 +33,7 @@ var emj_arr = ["&#129409", "&#8986", "&#8987", "&#9200", "&#9748", "&#9749", "&#
     d.push({
       el: a,
       x: e.clientX - 10,
-      y: e.clientY - 10,
+      y: e.clientY - 15,
       scale: 1,
       alpha: 1
     }),
