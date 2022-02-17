@@ -1,5 +1,5 @@
 ---
-bg: "about.jpg"
+bg: "bg_about.jpg"
 layout: page
 title: "关于"
 crawlertitle: "关于"

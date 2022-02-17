@@ -22,17 +22,19 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-this is a [link](https://www.baidu.com/)
+this is a [百度连接](https://www.baidu.com/)
 
-fmdndvjnfdcd
+这是一个连接分开的link [百度连接][baidu-link]
+
+fdfdmkfkdmkfmdkfdmcdckdmckdsmckdskcmdsmcdsklmlkdlkmsvkfvf
+
+[baidu-link]: https://www.baidu.com/
 
 =============================
 
 以下两行为添加目录的：
 * 目录
 {:toc}
-
-vfjmsdvmfkvf
 
 -------------------
 
@@ -112,7 +114,7 @@ System.output.println(c);
 
 ** nvjf
 
-**cndjn **
+**cndjn**
 
 **nfvn**
 

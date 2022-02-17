@@ -1,5 +1,5 @@
 ---
-bg: "tag.jpg"
+bg: "bg_tag.jpg"
 layout: page
 permalink: /posts/
 title: "归档"

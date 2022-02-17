@@ -48,6 +48,7 @@ plugins:
   - jekyll-paginate
 
 images: '/assets/images'
+ext_data: '/assets/data'
 
 animation:
   Snowflake: true
