@@ -109,16 +109,16 @@ a {
     order: 1;
     line-height: 50px;
     margin: auto;
-    color: $oc-teal-3;
+    color: $oc-blue-4;
 
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
 
     text-decoration: none;
     &:hover,
     &:focus,
     &:active {
-      color: $oc-blue-4;
+      color: $oc-teal-3;
     }
   }
 }
