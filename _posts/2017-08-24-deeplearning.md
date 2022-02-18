@@ -6,7 +6,7 @@ crawlertitle: "Deeplearning"
 summary: "深度学习总结"
 date: 2017-08-24
 categories: posts
-tags: ['python']
+tags: ['Python技术']
 author: CheungWoonMing
 ---
 
