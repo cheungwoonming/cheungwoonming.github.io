@@ -19,6 +19,7 @@ disqus_username:
 
 # 时区
 timezone: Asia/Shanghai
+#timezone: '+0800'
 
 # Pagination
 paginate: 5
