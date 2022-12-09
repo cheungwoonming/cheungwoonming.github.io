@@ -17,6 +17,9 @@ twitter_username: 幻圣
 github_username: CheungWoonMing
 disqus_username:
 
+# 时区
+timezone: Asia/Shanghai
+
 # Pagination
 paginate: 5
 
