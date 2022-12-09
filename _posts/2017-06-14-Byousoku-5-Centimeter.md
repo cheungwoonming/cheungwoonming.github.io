@@ -1,5 +1,5 @@
 ---
-bg: "2017-06-14-bg.png"
+bg: "{{site.images}}/2017/2017-06-14-bg.png"
 layout: post
 title: "秒速五厘米"
 crawlertitle: "Byousoku 5 Centimeter"
@@ -14,7 +14,7 @@ author: CheungWoonMing
 
 那么我们要在樱花树下谈心多久才算认识呢。
 
-[![image]({{site.images}}/2017-06-14-1.png)]({{site.images}}/2017-06-14-1.png)
+[![image]({{site.images}}/2017/2017-06-14-1.png)]({{site.images}}/2017/2017-06-14-1.png)
 
 ## 《无名之约》
 
@@ -36,7 +36,7 @@ author: CheungWoonMing
 
 世界像由蝼蚁琐屑堆叠而成的荒废，只欠一把燎原之火燃之殆尽。
 
-[![image]({{site.images}}/2017-06-14-2.png)]({{site.images}}/2017-06-14-2.png)
+[![image]({{site.images}}/2017/2017-06-14-2.png)]({{site.images}}/2017/2017-06-14-2.png)
 
 ## 《夏雪》
 
@@ -62,7 +62,7 @@ author: CheungWoonMing
 
 不知道在樱花落幕之前，能不能遇到飘雪的到来，去延续这欣赏的雅致。
 
-[![image]({{site.images}}/2017-06-14-3.png)]({{site.images}}/2017-06-14-3.png)
+[![image]({{site.images}}/2017/2017-06-14-3.png)]({{site.images}}/2017/2017-06-14-3.png)
 
 ## 《空无一物》
 
@@ -78,5 +78,5 @@ author: CheungWoonMing
 
 空洞的目光得以一直延续，到很远的另一边。
 
-[![image]({{site.images}}/2017-06-14-4.png)]({{site.images}}/2017-06-14-4.png)
+[![image]({{site.images}}/2017/2017-06-14-4.png)]({{site.images}}/2017/2017-06-14-4.png)
 
