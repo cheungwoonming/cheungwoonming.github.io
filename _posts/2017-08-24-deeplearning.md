@@ -1,5 +1,5 @@
 ---
-bg: "tools.jpg"
+bg: "2017-08-24/2017-08-24-bg.jpg"
 layout: post
 title: "Deeplearning On Web"
 crawlertitle: "Deeplearning"
