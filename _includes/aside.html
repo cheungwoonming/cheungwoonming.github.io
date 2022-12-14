@@ -1,7 +1,11 @@
-{% if page.bg %}
-  <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/{{ page.bg }})">
+{% if page.bg_url %}
+<aside class="sidebar" role="note" style="background-image: url({{ page.bg }})">
 {% else %}
-  <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/bg.svg)">
+  {% if page.bg %}
+    <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/{{ page.bg }})">
+  {% else %}
+    <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/bg.svg)">
+  {% endif %}
 {% endif %}
 
   <div class="cover">
