@@ -34,17 +34,10 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.summary }}">
 
-  {% if page.bg_url %}
-    <meta property="og:image" content="{{ page.bg_url }}">
-    <meta name="twitter:image" content="{{ page.bg_url }}">
-  {% endif %}
-
   {% if page.bg %}
-    <meta property="og:image" content="{{ site.url }}{{ site.images }}/{{ page.bg }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.images }}/{{ page.bg }}">
-  {% endif %}
-
-  {% if not(page.bg and page.bg_url) %}
+    <meta property="og:image" content="{{ page.bg }}">
+    <meta name="twitter:image" content="{{ page.bg }}">
+  {% else %}
     <meta property="og:image" content="{{ site.url }}{{ site.images }}/bg.svg">
     <meta name="twitter:image" content="{{ site.url }}{{ site.images }}/bg.svg">
   {% endif %}
