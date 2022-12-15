@@ -138,3 +138,5 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 ![img]({{site.images}}/rails.jpg)
 
+bg_url 的链接不能有括号()，需要用\进行转移
+bg_url的设置在_includes/aside.html和head.html
