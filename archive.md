@@ -1,10 +1,10 @@
 ---
-bg: "bg_tag.jpg"
+bg: "bg_archive.jpg"
 layout: page
 permalink: /posts/
 title: "归档"
-crawlertitle: "文章归档"
-summary: "List of blog"
+crawlertitle: "心之所向"
+summary: "以为说了就能明白，是傲慢的想法<br/>是说者的自我满足，是听者的自以为是<br/>并不是所有事，都能通过解释让人理解"
 active: archive
 ---
 
