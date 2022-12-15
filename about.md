@@ -4,7 +4,7 @@ layout: page
 title: "关于"
 crawlertitle: "关于"
 permalink: /about/
-summary: "关于我"
+summary: "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp目光全无你，余光全是你<br/>不经意说出关于你的话题，无人察觉我的刻意<br/>"
 active: about
 ---
 
