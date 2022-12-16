@@ -301,7 +301,7 @@ article {
 * Footer
 * ========================================================================== */
 .blog-footer {
-  height: 4em;
+  height: 5em;
   margin: 5em auto 0;
   font-size: 90%;
   border-top: 1px solid #ddd;
@@ -341,10 +341,10 @@ footer {
   padding: 20px 0;
   text-align: center;
 
-  p {
-    font-size: $small-font-size;
-    color: $base-lighten-color;
-  }
+  //p {
+  //  font-size: $small-font-size;
+  //  color: $base-lighten-color;
+  //}
 
   .svg-icon {
     display: block;
