@@ -15,6 +15,8 @@
           {% for tag in page.tags %}
             <a href="/posts/#{{ tag | downcase }}">{{ tag | downcase }}</a>
           {% endfor %}
+        {% elsif page.crawlertitle %}
+          {{ page.crawlertitle }}
         {% else %}
           {{ page.title }}
         {% endif %}
