@@ -73,12 +73,12 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
       </div>
 
       <div class="entry">
-        <a href="{{ site.baseurl }}{{ post.url }}">
+<!--        <a href="{{ site.baseurl }}{{ post.url }}">-->
         {{ post.excerpt | truncate: 200 }}
-        </a>
+<!--        </a>-->
       </div>
 
-<!--      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endunless %}
   {% endfor %}
