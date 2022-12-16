@@ -8,6 +8,7 @@ summary: "世界上所有的不利状况，都是当事者能力不足导致的"
 active: about
 ---
 
-我的Github：
+Github：
 {{site.github_username}} /
 [Github Addr](https://github.com/cheungwoonming)
+
