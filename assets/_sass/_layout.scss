@@ -347,8 +347,13 @@ footer {
   //}
 
   p {
-    font-size: $small-font-size;
-    color: $base-lighten-color;
+      height: 6em;
+      margin: 6em auto 0;
+      font-size: 100%;
+      border-top: 1px solid #ddd;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.5em;
   }
 
   .svg-icon {
