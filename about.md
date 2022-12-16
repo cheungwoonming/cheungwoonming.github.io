@@ -12,3 +12,6 @@ Github：
 {{site.github_username}} /
 [Github Addr](https://github.com/cheungwoonming)
 
+<footer class="icon-footer">
+  {% include svg-icons.html %}
+</footer>
