@@ -64,8 +64,8 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
         <ul class="tag">
           {% for tag in post.tags %}
           <li>
-<!--            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">-->
-            <a href="/posts/#{{ tag | downcase }}">
+            <a href="{{ site.url }}{{ site.baseurl }}/posts#{{ tag }}">
+<!--            <a href="/posts/#{{ tag | downcase }}">-->
               {{ tag }}
             </a>
           </li>
