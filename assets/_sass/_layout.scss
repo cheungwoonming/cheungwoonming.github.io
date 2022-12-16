@@ -346,6 +346,11 @@ footer {
   //  color: $base-lighten-color;
   //}
 
+  p {
+    font-size: $small-font-size;
+    color: $base-lighten-color;
+  }
+
   .svg-icon {
     display: block;
     font-size: 0;
