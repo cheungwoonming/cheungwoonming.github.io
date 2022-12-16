@@ -10,5 +10,10 @@ active: about
 
 Github：
 {{site.github_username}} /
-[Github Addr](https://github.com/cheungwoonming)
+[Addr](https://github.com/cheungwoonming)
 
+Bilibili： [我的B站](https://space.bilibili.com/{{site.footer-links.bilibili}})
+
+微博： [我的微博](https://www.weibo.com/{{site.footer-links.weibo}})
+
+知乎：[我的知乎](https://zhihu.com/people/{{site.footer-links.zhihu}})
