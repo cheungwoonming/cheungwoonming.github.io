@@ -57,9 +57,9 @@ ext_data: '/assets/data'
 animation:
   Snowflake: true
   Click_love: false
-  Click_emoji: true # 和Click_love只能二选一
+  Click_emoji: true  # 和Click_love只能二选一
   Click_fireworks: true
-  Signboard: true
+  Signboard: false  # 人物看板
 
 gitalk:
   enable: true
