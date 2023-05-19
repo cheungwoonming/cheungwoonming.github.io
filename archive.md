@@ -1,5 +1,5 @@
 ---
-bg: "https://cdn.staticaly.com/gh/cheungwoonming/picx_img@main/jpb_BG_img/bg_archive.jpg"
+bg: "https://cdn.staticaly.com/gh/cheungwoonming/picx_img@main/jpg_BG_img/bg_archive.jpg"
 layout: page
 permalink: /posts/
 title: "归档"
