@@ -1,5 +1,5 @@
 ---
-bg: "https://cdn.staticaly.com/gh/cheungwoonming/picx_img@main/jpg_BG_img/bg_about.jpg"
+bg_url: "https://cdn.staticaly.com/gh/cheungwoonming/picx_img@main/jpg_BG_img/bg_about.jpg"
 layout: page
 title: "关于"
 crawlertitle: "心不动 则不痛"
