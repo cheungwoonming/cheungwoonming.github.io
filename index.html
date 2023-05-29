@@ -89,14 +89,8 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
 
       {% if post.bg_url %}
           <img src="{{ post.bg_url }}" width="100%" title="{{ post.bg_url }}">
-          分割线
-          <div style="background-image: url({{ post.bg_url }})">
-          分割线
-          <aside style="background-image: url({{ post.bg_url }})">
       {% elsif post.bg %}
-          <div role="note" style="background-image: url({{ site.url }}{{ site.images }}/{{ post.bg }})">
-      {% else %}
-          <aside role="note" style="background-image: url({{ site.url }}{{ site.images }}/bg.svg)">
+          <img src="{{ site.url }}{{ site.images }}/{{ post.bg }}" width="100%" title="{{ site.url }}{{ site.images }}/{{ post.bg }}">
       {% endif %}
 
     </article>
