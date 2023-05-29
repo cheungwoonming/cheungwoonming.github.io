@@ -88,7 +88,11 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">打开再看看...</a>
 
       {% if post.bg_url %}
-          <aside class="sidebar" role="note" style="background-image: url({{ post.bg_url }})">
+          [![image]({{ post.bg_url }})]({{ post.bg_url }})
+          分割线
+          <img src="{{ post.bg_url }}" width="500" alt="鱼" title="这是一条熟的鱼">
+          分割线
+          <aside role="note" style="background-image: url({{ post.bg_url }})">
       {% elsif post.bg %}
           <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/{{ post.bg }})">
       {% else %}
