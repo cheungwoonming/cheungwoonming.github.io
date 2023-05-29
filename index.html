@@ -86,6 +86,15 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">打开再看看...</a>
+
+      {% if page.bg_url %}
+          <aside class="sidebar" role="note" style="background-image: url({{ page.bg_url }})">
+      {% elsif page.bg %}
+          <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/{{ page.bg }})">
+      {% else %}
+          <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/bg.svg)">
+      {% endif %}
+
     </article>
   {% endunless %}
   {% endfor %}
