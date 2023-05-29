@@ -87,11 +87,13 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">打开再看看...</a>
 
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
       {% if post.bg_url %}
           <img src="{{ post.bg_url }}" width="100%" title="{{ post.bg_url }}">
       {% elsif post.bg %}
           <img src="{{ site.url }}{{ site.images }}/{{ post.bg }}" width="100%" title="{{ site.url }}{{ site.images }}/{{ post.bg }}">
       {% endif %}
+      </a>
 
     </article>
   {% endunless %}
