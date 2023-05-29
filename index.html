@@ -77,7 +77,7 @@ summary: "你的灵魂知道你的孤独，被那灰暗得如同墓碑一般的�
       <div class="entry">
 <!--        <a href="{{ site.baseurl }}{{ post.url }}">-->
         {% if post.summary %}
-            {{ post.summary }}
+        <p>{{ post.summary }} </p>
         {% else %}
           {{ post.excerpt | truncate: 200 }}
 <!--        原代码：截取文章的第一段，并且截断200个词-->
