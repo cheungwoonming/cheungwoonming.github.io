@@ -61,8 +61,8 @@ animation:
 
 gitalk:
   enable: true
-  clientID: 'ac91e3a3714342401e59'
-  clientSecret: '1fbd8f4cc27a26ed5098b23e299ea8d26b0999fb'
+  clientID: 'Ov23lidHASTsHDF4v1PI'
+  clientSecret: '705b2e55c9c77c80e26b4c8ef4b3b695b4fa986e'
   repo: 'cheungwoonming.github.io'
   owner: 'cheungwoonming'
   distractionFreeMode: true
