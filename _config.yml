@@ -7,9 +7,7 @@
 
 # Site settings
 title: 幻圣的空间
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "幻圣的个人博客 —— 记录技术学习、大模型与机器学习笔记、算法与工程实践，以及一些生活随笔。"
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "zh-CN"
 url: "https://cheungwoonming.github.io"

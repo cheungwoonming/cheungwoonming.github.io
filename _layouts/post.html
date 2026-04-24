@@ -13,7 +13,8 @@ layout: default
       &nbsp;/&nbsp;
       <span>{{ page.author }}</span>
     {% endif %}
-     / <span>{{ content | strip_html | strip_newlines | split: "" | size }} words</span>
+    {% assign words = content | strip_html | strip_newlines | replace: ' ', '' | size %}
+     / <span>约 {{ words }} 字</span>
   </p>
 
   <div class="post-content">
@@ -43,19 +44,18 @@ layout: default
 </article>
 
 {% if site.gitalk.enable %}
-  <!-- Link Gitalk 的支持文件 -->
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="assets/js/md5.min.js"></script>
+  <!-- Gitalk 评论组件：样式 + md5 依赖（主脚本已在 head.html 全局加载，避免重复） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="{{ "/assets/js/md5.min.js" | relative_url }}"></script>
   <script type="text/javascript">
       var gitalk = new Gitalk({
           clientID: '{{ site.gitalk.clientID }}',
           clientSecret: '{{ site.gitalk.clientSecret }}',
           repo: '{{ site.gitalk.repo }}',
           owner: '{{ site.gitalk.owner }}',
-          admin: '{{ site.gitalk.owner }}',
+          admin: ['{{ site.gitalk.owner }}'],
           id: md5(window.location.pathname),
-          distractionFreeMode: '{{ site.gitalk.distractionFreeMode }}'
+          distractionFreeMode: {{ site.gitalk.distractionFreeMode }}
       });
       gitalk.render('gitalk-container');
   </script>
