@@ -53,31 +53,48 @@ layout: default
   (function () {
     var btn = document.getElementById('back-to-top');
     if (!btn) return;
-    var threshold = 300; // 滚动超过该像素值才显示按钮
+    var threshold = 100; // 滚动超过该像素值就显示按钮
     var ticking = false;
 
+    function getScrollTop() {
+      return window.pageYOffset
+        || document.documentElement.scrollTop
+        || document.body.scrollTop
+        || 0;
+    }
+
     function toggle() {
-      var y = window.pageYOffset || document.documentElement.scrollTop;
-      btn.classList.toggle('is-visible', y > threshold);
+      var y = getScrollTop();
+      if (y > threshold) {
+        btn.classList.add('is-visible');
+      } else {
+        btn.classList.remove('is-visible');
+      }
       ticking = false;
     }
 
-    window.addEventListener('scroll', function () {
+    function onScroll() {
       if (!ticking) {
         window.requestAnimationFrame(toggle);
         ticking = true;
       }
-    }, { passive: true });
+    }
+
+    // 同时监听 window 和 document，兼容不同滚动宿主
+    window.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener('scroll', onScroll, { passive: true });
 
     btn.addEventListener('click', function () {
-      // 优先使用原生平滑滚动，老浏览器回退为直接回顶
       if ('scrollBehavior' in document.documentElement.style) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
-        window.scrollTo(0, 0);
+        // 老浏览器回退：同时重置 documentElement 和 body 的 scrollTop
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
       }
     });
 
+    // 首屏立即判定一次（避免刷新后已在页面中部时按钮不出现）
     toggle();
   })();
 </script>
