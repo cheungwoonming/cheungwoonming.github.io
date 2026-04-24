@@ -43,61 +43,18 @@ layout: default
 
 </article>
 
+<!-- 阅读进度条：固定于页面顶部，随滚动填充 -->
+<div class="reading-progress-wrapper" aria-hidden="true">
+  <div id="reading-progress" class="reading-progress"></div>
+</div>
+
 <!-- 回到顶部按钮 -->
 <button id="back-to-top" class="back-to-top" aria-label="回到顶部" title="回到顶部">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
     <polyline points="18 15 12 9 6 15"></polyline>
   </svg>
 </button>
-<script>
-  (function () {
-    var btn = document.getElementById('back-to-top');
-    if (!btn) return;
-    var threshold = 100; // 滚动超过该像素值就显示按钮
-    var ticking = false;
-
-    function getScrollTop() {
-      return window.pageYOffset
-        || document.documentElement.scrollTop
-        || document.body.scrollTop
-        || 0;
-    }
-
-    function toggle() {
-      var y = getScrollTop();
-      if (y > threshold) {
-        btn.classList.add('is-visible');
-      } else {
-        btn.classList.remove('is-visible');
-      }
-      ticking = false;
-    }
-
-    function onScroll() {
-      if (!ticking) {
-        window.requestAnimationFrame(toggle);
-        ticking = true;
-      }
-    }
-
-    // 同时监听 window 和 document，兼容不同滚动宿主
-    window.addEventListener('scroll', onScroll, { passive: true });
-    document.addEventListener('scroll', onScroll, { passive: true });
-
-    btn.addEventListener('click', function () {
-      if ('scrollBehavior' in document.documentElement.style) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        // 老浏览器回退：同时重置 documentElement 和 body 的 scrollTop
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-      }
-    });
-
-    // 首屏立即判定一次（避免刷新后已在页面中部时按钮不出现）
-    toggle();
-  })();
-</script>
+<script src="{{ "/assets/js/post-ui.js" | relative_url }}" defer></script>
 
 {% if site.gitalk.enable %}
   <!-- Gitalk 评论组件：样式 + md5 依赖（主脚本已在 head.html 全局加载，避免重复） -->
